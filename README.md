@@ -1,19 +1,11 @@
-# Remix Application Template
-
-[![Pipeline](https://github.com/digitalservicebund/remix-application-template/actions/workflows/pipeline.yml/badge.svg)](https://github.com/digitalservicebund/remix-application-template/actions/workflows/pipeline.yml)
-[![Scan](https://github.com/digitalservicebund/remix-application-template/actions/workflows/scan.yml/badge.svg)](https://github.com/digitalservicebund/remix-application-template/actions/workflows/scan.yml)
-[![Secrets Check](https://github.com/digitalservicebund/remix-application-template/actions/workflows/secrets-check.yml/badge.svg)](https://github.com/digitalservicebund/remix-application-template/actions/workflows/secrets-check.yml)
-
-⚠️ **Be warned:** This template is currently work in progress and has not been tested in production yet.
-
-Bootstrap a [Remix](https://remix.run/docs) and TypeScript application with Continuous Delivery
+# A2J - Verfahrensplattform
 
 ## Prerequisites
 
 ### Node.js
 
 We aim to use the current active [LTS version of nodejs](https://nodejs.dev/en/about/releases/), which is V20 at the time of writing.
-There is a `.node-version` file to simplify setup using [nodenv](https://github.com/nodenv/nodenv).
+There is a `.node-version` file to simplify setup using [nodenv](https://github.com/nodenv/nodenv) or [asdf](https://github.com/asdf-vm/asdf-nodejs), for example.
 
 ### Dependencies
 
