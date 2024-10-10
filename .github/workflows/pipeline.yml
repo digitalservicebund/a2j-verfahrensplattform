@@ -155,6 +155,7 @@ jobs:
           TRIVY_DB_REPOSITORY: ghcr.io/aquasecurity/trivy-db,public.ecr.aws/aquasecurity/trivy-db
         with:
           image-ref: ${{ env.IMAGE_NAME }}:${{ github.sha }}
+          scanners: "vuln"
           format: "cosign-vuln"
           output: "vulnerabilities.json"
 
