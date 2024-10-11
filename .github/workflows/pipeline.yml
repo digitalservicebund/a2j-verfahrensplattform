@@ -15,15 +15,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Faulty step
-        run: exit 1
-
-      - name: Send failure to Slack
-        uses: digitalservicebund/notify-on-failure-gha@814d0c4b2ad6a3443e89c991f8657b10126510bf # v1.5.0
-        if: ${{ failure() }}
-        with:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-
       - name: Checkout code
         uses: actions/checkout@v4
 
