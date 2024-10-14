@@ -53,10 +53,5 @@
   },
   "engines": {
     "node": ">=20.0.0"
-  },
-  "overrides": {
-    "@remix-run/server-runtime": {
-      "cookie": "^0.7.2"
-    }
   }
 }
