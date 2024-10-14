@@ -34,6 +34,7 @@ jobs:
           scanners: "vuln"
           scan-type: "fs"
           format: "sarif"
+          limit-severities-for-sarif: true
           output: "trivy-results.sarif"
           severity: "CRITICAL,HIGH"
           exit-code: "1" # Fail the build!
