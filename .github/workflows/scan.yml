@@ -28,12 +28,14 @@ jobs:
         env:
           TRIVY_USERNAME: ${{ github.actor }}
           TRIVY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-          # specify multiple registries: try default GitHub registry, if too many requests, use the aws mirror
+          # Specify multiple registries: try default GitHub registry, if too many requests, use the aws mirror.
           TRIVY_DB_REPOSITORY: ghcr.io/aquasecurity/trivy-db,public.ecr.aws/aquasecurity/trivy-db
         with:
           scanners: "vuln"
           scan-type: "fs"
           format: "sarif"
+          # By default SARIF format enforces output of all vulnerabilities regardless of configured severities.
+          # To override this set limit-severities-for-sarif to true.
           limit-severities-for-sarif: true
           output: "trivy-results.sarif"
           severity: "CRITICAL,HIGH"
