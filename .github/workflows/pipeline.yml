@@ -192,3 +192,21 @@ jobs:
 
       - name: Attest the vulnerability scan
         run: cosign attest --yes --replace --predicate vulnerabilities.json --type vuln ghcr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+  deploy-staging:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
+    environment: staging
+    needs: build-and-push-image # Will only run if the build and push job succeded
+    steps:
+      - name: Deploy latest container image
+        uses: digitalservicebund/argocd-deploy@4fac1bb67c92ed168f6d9b22f8779ce241a9e412 # v1.0.0
+        with:
+          environment: staging
+          version: ${{ env.CONTAINER_IMAGE_VERSION }}
+          deploying_repo: ${{ github.event.repository.name }}
+          infra_repo: ${{ github.event.repository.name }}-infra
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          app: a2j-vepla-app
+          argocd_pipeline_password: ${{ secrets.ARGOCD_PIPELINE_PASSWORD }}
+          argocd_server: ${{ secrets.ARGOCD_SERVER }}
