@@ -37,7 +37,7 @@
     "@playwright/test": "^1.47.1",
     "@remix-run/dev": "^2.13.1",
     "@remix-run/eslint-config": "^2.13.1",
-    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/jest-dom": "^6.6.1",
     "@types/jest": "^29.5.13",
     "@types/node": "^22.7.4",
     "@types/react": "^18.3.7",
