@@ -7,8 +7,8 @@ fileignoreconfig:
     checksum: b1743150cdd537be3a66f5308f887d130f0f320ab21628b63713808090a84e3f
   - filename: .github/workflows/pipeline.yml
     checksum: e9e131a6a73718f3b6f037da0505cc3eb613111ca4c98dd41259be463d8e5bf8
-  - filename: app/components/Button.tsx
-    checksum: 76dff4b52407d5271d6a6ebee5fe1f3e8176435d0aa02193c951cac14ec49c5e
+  - filename: .env.example
+    checksum: f9a17abef8cc0ff034bc6d7544ce55d4256398967976b8819b3981f5c455ffb3
 version: ""
 scopeconfig:
   - scope: node
