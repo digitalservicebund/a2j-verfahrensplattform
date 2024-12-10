@@ -7,8 +7,12 @@ fileignoreconfig:
     checksum: b1743150cdd537be3a66f5308f887d130f0f320ab21628b63713808090a84e3f
   - filename: .github/workflows/pipeline.yml
     checksum: e9e131a6a73718f3b6f037da0505cc3eb613111ca4c98dd41259be463d8e5bf8
-  - filename: app/components/Button.tsx
-    checksum: 76dff4b52407d5271d6a6ebee5fe1f3e8176435d0aa02193c951cac14ec49c5e
+  - filename: .env.example
+    checksum: e4f39c1718c11d16be854b2ff85c9bfb1d6ea9d5d1fafa3945515b5b458f0dcc
+  - filename: app/services/brakAuth.server.ts
+    checksum: 8dfb9909e8edfe1291317cd892f2baa2c6986d1fb74680506faac3928ea4c4b1
+  - filename: app/services/session.server.ts
+    checksum: 191f115c3975c89e2f06abeeb67b8796afa9b5f5553e1210c173302b3e7d6afa
 version: ""
 scopeconfig:
   - scope: node

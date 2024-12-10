@@ -154,3 +154,6 @@ lefthook-local.yml
 
 # Talisman
 talisman_report
+
+# Temporariy data/files/secrets
+temp

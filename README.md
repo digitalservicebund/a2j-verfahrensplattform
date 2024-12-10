@@ -33,6 +33,16 @@ See `lefthook.yml` for more details and have a look at [conventional commit mess
 
 ## Development
 
+### Configure .env variables
+
+Copy the `.env.example` file and save it as `.env` within this projects root folder and define the needed environment variables. For example:
+
+```sh
+BASE_URL=http://localhost:3000
+```
+
+### Local development
+
 From your terminal:
 
 ```sh
