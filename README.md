@@ -4,7 +4,7 @@
 
 ### Node.js and Homebrew
 
-We aim to use the current active [LTS version of Node.js](https://nodejs.dev/en/about/releases/), which is V20 at the time of writing. There is a `.node-version` file to simplify setup using [nodenv](https://github.com/nodenv/nodenv) (install Node version by running `nodenv install`) or [asdf](https://github.com/asdf-vm/asdf-nodejs) (check and install used Node version by running `asdf current`).
+We aim to use the current active [LTS version of Node.js](https://nodejs.dev/en/about/releases/), which is V20 at the time of writing. There is a `.tool-versions` file to simplify setup using [nodenv](https://github.com/nodenv/nodenv) (install Node version by running `nodenv install`) or [asdf](https://github.com/asdf-vm/asdf-nodejs) (check and install used Node version by running `asdf current`).
 
 Additionally we use [Git Hooks](#git-hooks) that can be installed with [Homebrew](https://brew.sh/), please check if brew is available on your machine with `brew -v` command.
 
